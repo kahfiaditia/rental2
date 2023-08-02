@@ -42,7 +42,7 @@
 										</div> --}}
 
                                 <div class="ed_view_link">
-                                    <a href="wa.me/087888578686" class="btn btn-theme enroll-btn"
+                                    <a href="https://wa.me/081398604136" class="btn btn-theme enroll-btn"
                                         target="_blank">Hubungi Kami<i class="fab fa-whatsapp"></i></a>
                                 </div>
 

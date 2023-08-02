@@ -24,7 +24,7 @@
                         </div>
                         <div class="ed_view_link">
                             @foreach ($tentang as $item)
-                                <a href="https://wa.me/{{ $item->telp1 }}" class="btn btn-theme enroll-btn"
+                                <a href="https://wa.me/081398604136" class="btn btn-theme enroll-btn"
                                     target="_blank">Hubungi Kami<i class="fab fa-whatsapp"></i></a>
                                 <a href="tel:+{{ $item->telp1 }}" class="btn btn-theme enroll-btn"
                                     target="_blank">Hubungi Kami<i class="fas fa-phone"></i></a>

@@ -21,7 +21,7 @@
 
                     <li class="login_click light">
                         {{-- @foreach ($tentang as $item) --}}
-                        <a href="" target="_blank">Hubungi Kami</a>
+                        <a href="https://wa.me/081398604136" target="_blank">Hubungi Kami</a>
 
                     </li>
                 </ul>
