@@ -188,23 +188,25 @@
                                                         class="fas fa-arrow-alt-circle-right"></i></span></a>
                                         </div>
                                     </div>
-                                    {{-- <div class="dropdown show">
-											<a class="btn btn-custom dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Recent Courses
-											</a>
-											<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-											<a class="dropdown-item" href="#">Popular Courses</a>
-											<a class="dropdown-item" href="#">Recent Courses</a>
-											<a class="dropdown-item" href="#">Featured Courses</a>
-											</div>
-										</div> --}}
+                                    {{-- @foreach ($test as $product)
+                                        {{ $product->nama }} <br>
+                                        {{ $product->jam1_full_day_all_models_harga }} <br>
+                                        {{ $product->full_day_all_models_harga }} <br>
+                                        {{ $product->jam2_full_day_models_harga }} <br>
+                                        {{ $product->full_day_models_harga }} <br>
+                                        {{ $product->jam3_dakot12_jam_allins_harga }} <br>
+                                        {{ $product->dakot12_jam_allins_harga }} <br>
+                                        {{ $product->jam4_dakot_12_harga }} <br>
+                                        {{ $product->dakot_12_harga }} <br>
+                                        <br>
+                                    @endforeach --}}
                                 </div>
                             </div>
                         </div>
                         <!-- /Row -->
 
                         <div class="row">
-                            @foreach ($armada as $item)
+                            {{-- @foreach ($armada as $item)
                                 <div class="col-lg-4 col-md-6">
                                     <div class="education_block_grid">
 
@@ -220,8 +222,7 @@
                                                     {{ 'Rp ' . number_format($item->harga_12_all, 2, ',', '.') }}
                                                 @endif
                                             </div>
-                                            {{-- <div class="cources_price">$610</div>
-											<div class="cources_price">$510</div> --}}
+
                                             <div class="education_ratting"><i class="fa fa-star"></i>4.8 (62)</div>
                                         </div>
 
@@ -246,6 +247,75 @@
                                                     </li>
                                                     <li class="tag-4"></i><strong>Durasi:</strong>Full Day All IN
                                                         {{ 'Rp ' . number_format($item->harga_full_all, 2, ',', '.') }}
+                                                        <p>MOBIL + DRIVER OPERASIONAL (DAKOT)</p>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="ed_view_link">
+                                            @foreach ($tentang as $telp)
+                                                <a href="https://wa.me/{{ $telp->telp1 }}"
+                                                    class="btn btn-theme enroll-btn" target="_blank">Hubungi Kami<i
+                                                        class="fab fa-whatsapp"></i></a>
+                                                <a href="tel:+{{ $telp->telp1 }}" class="btn btn-theme enroll-btn"
+                                                    target="_blank">Hubungi Kami<i class="fas fa-phone"></i></a>
+                                            @endforeach
+                                        </div>
+
+                                    </div>
+                                </div>
+                            @endforeach --}}
+
+                            @foreach ($test as $item)
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="education_block_grid">
+
+                                        <div class="education_block_thumb">
+                                            <a href="course-detail.html"><img
+                                                    src="{{ URL::asset('files/armada/' . $item->image) }}"
+                                                    class="img-fluid" alt=""></a>
+                                            <div class="cources_price">Mulai dari
+                                                @if ($item->dakot_12_harga)
+                                                    {{ 'Rp ' . number_format($item->harga_12, 2, ',', '.') }}
+                                                @endif
+                                                @if ($item->harga_12_all)
+                                                    {{ 'Rp ' . number_format($item->harga_12_all, 2, ',', '.') }}
+                                                @endif
+                                            </div>
+
+                                            <div class="education_ratting"><i class="fa fa-star"></i>4.8 (62)</div>
+                                        </div>
+
+                                        <div class="education_block_body">
+                                            <h4 class="bl-title">{{ $item->merk }}</h4>
+                                            <p>{!! $item->deskripsi !!}</p>
+                                        </div>
+                                        <div class="col-lg-12 col-md-6">
+                                            <div class="ed_detail_wrap">
+                                                <ul class="list_ed_detail2">
+                                                    <li class="tag-2">
+                                                        </i><strong>Durasi:</strong>{{ $item->jam4_dakot_12_harga }} Jam
+                                                        {{ 'Rp ' . number_format($item->dakot_12_harga, 0, ',', '.') }}
+                                                        <p>MOBIL + DRIVER DILUAR OPERASIONAL (DAKOT)</p>
+                                                    </li>
+                                                    <li class="tag-1">
+                                                        </i><strong>Durasi:</strong>{{ $item->jam3_dakot12_jam_allins_harga }}
+                                                        Jam
+                                                        {{ 'Rp ' . number_format($item->dakot12_jam_allins_harga, 0, ',', '.') }}
+                                                        <p>MOBIL + DRIVER OPERASIONAL (DAKOT)</p>
+                                                    </li>
+                                                    <li class="tag-3">
+                                                        </i><strong>Durasi:</strong>{{ $item->jam2_full_day_models_harga }}
+                                                        Jam
+                                                        {{ 'Rp ' . number_format($item->full_day_models_harga, 2, ',', '.') }}
+                                                        <p>MOBIL + DRIVER DILUAR OPERASIONAL (DAKOT)</p>
+                                                    </li>
+                                                    <li class="tag-4">
+                                                        </i><strong>Durasi:</strong>{{ $item->jam1_full_day_all_models_harga }}
+                                                        Jam
+                                                        {{ 'Rp ' . number_format($item->full_day_all_models_harga, 2, ',', '.') }}
                                                         <p>MOBIL + DRIVER OPERASIONAL (DAKOT)</p>
                                                     </li>
 

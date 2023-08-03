@@ -5,7 +5,7 @@
             <div class="col-lg-5 col-md-6 col-sm-12">
                 <div class="sec-heading center">
                     <p>Harga &amp; Paket</p>
-                    <h2><span class="theme-cl">Maju Jaya</span> Berkah</h2>
+                    <h2><span class="theme-cl">Maju </span> Berkah</h2>
                 </div>
             </div>
         </div>

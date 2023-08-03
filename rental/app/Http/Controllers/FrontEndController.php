@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ArmadaModel;
+use App\Models\DaftarMobilModel;
 use App\Models\TentangModel;
 
 
@@ -12,8 +13,8 @@ class FrontEndController extends Controller
     public function index()
     {
         $data = [
-            'armada' => ArmadaModel::whereNotNull('harga_12')->get(),
-            'mobil' => ArmadaModel::where('aktif',1)->get(),
+            'armada' => DaftarMobilModel::all(),
+            'mobil' => ArmadaModel::where('aktif', 1)->get(),
             'tentang' => TentangModel::all()
         ];
         return view('index')->with($data);
