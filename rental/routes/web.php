@@ -6,9 +6,16 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\AkunController;
 use App\Http\Controllers\ArmadaController;
+use App\Http\Controllers\DaftarMobilController;
+use App\Http\Controllers\Dakot12Controller;
+use App\Http\Controllers\Dakot12FullController;
+use App\Http\Controllers\FullDayAllController;
+use App\Http\Controllers\FullDayController;
 use App\Http\Controllers\TransportasiController;
 use App\Http\Controllers\TentangController;
-
+use App\Models\Dakot12JamAllin;
+use App\Models\FullDayAllModel;
+use App\Models\FullDayModel;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,5 +56,10 @@ Route::group(
         Route::get('/profile/{id}', [AkunController::class, 'profile'])->name('akun.profile');
         Route::resource('/armada', ArmadaController::class);
         Route::resource('/tentang', TentangController::class);
+        Route::resource('/daftar_mobil', DaftarMobilController::class);
+        Route::resource('/dakot_12', Dakot12Controller::class);
+        Route::resource('/dakot_12_full', Dakot12FullController::class);
+        Route::resource('/full_day', FullDayController::class);
+        Route::resource('/full_day_all', FullDayAllController::class);
     }
 );

@@ -19,16 +19,14 @@
                             @if ($item->image != null)
                                 <img src="{{ URL::asset('files/armada/' . $item->image) }}" class="img-fluid"
                                     alt="">
-                                <div class="cources_price">Tersedia Paket 12 Jam</div>
+                                {{-- <div class="cources_price">Tersedia Paket 12 Jam</div> --}}
                             @endif
                         </div>
                         <div class="ed_view_link">
-                            @foreach ($tentang as $item)
+                            <div class="ed_view_link">
                                 <a href="https://wa.me/081398604136" class="btn btn-theme enroll-btn"
                                     target="_blank">Hubungi Kami<i class="fab fa-whatsapp"></i></a>
-                                <a href="tel:+{{ $item->telp1 }}" class="btn btn-theme enroll-btn"
-                                    target="_blank">Hubungi Kami<i class="fas fa-phone"></i></a>
-                            @endforeach
+                            </div>
                         </div>
 
                     </div>

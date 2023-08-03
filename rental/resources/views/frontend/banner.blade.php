@@ -11,7 +11,7 @@
                         tidak hanya sekadar menyewa kendaraan, tetapi juga melibatkan perjalanan yang berkesan dan
                         menyenangkan.
                     </p>
-                    <a href="#" class="btn btn-modern green_dark">Enroll Now<span><i
+                    <a href="#" class="btn btn-modern green_dark">Lihat Harga dan Paket<span><i
                                 class="ti-arrow-right"></i></span></a>
                 </div>
             </div>
