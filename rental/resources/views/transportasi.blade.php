@@ -35,7 +35,7 @@
         <!-- ============================================================== -->
         <!-- Start Navigation -->
         @include('frontend.menu')
-        @include('frontend.slogan')
+        {{-- @include('frontend.slogan') --}}
         <!-- End Navigation -->
         <div class="clearfix"></div>
         <!-- ============================================================== -->
